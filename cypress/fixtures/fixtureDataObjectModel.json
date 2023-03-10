@@ -1,0 +1,8 @@
+{
+    "test1": {
+        "user" : "pushingit",
+        "pass" : "123456!"
+    } ,
+
+    "error": "Password must have a special character and a number"
+}
