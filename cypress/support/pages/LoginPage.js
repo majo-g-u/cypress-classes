@@ -15,10 +15,5 @@ export class LoginPage {
 
     clickBtnLogIn(){
     cy.get(this.loginButton).click();
-    }
-
-   
-    returnUser(user) {
-        return cy.get(`[id^=user_${user}_]`);
     };
 }

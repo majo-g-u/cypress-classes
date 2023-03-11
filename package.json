@@ -7,7 +7,7 @@
     "test": "npx cypress open --e2e -b electron",
     "testing": "npx cypress open --e2e -b electron --config baseUrl=https://pushing-front.vercel.app",
     "desarrollo": "npx cypress open --e2e -b electron --config baseUrl=https://pushing-it.vercel.app",
-    "spec": "npx cypress run --spec 'cypress/e2e/fixtures.cy.js'"
+    "spec": "npx cypress run --spec 'cypress/e2e/pageObjectModel.cy.js'"
   },
   "keywords": [],
   "author": "",
