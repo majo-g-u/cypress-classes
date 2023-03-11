@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open --e2e -b electron",
-    "testing": "npx cypress open --e2e -b electron --config baseUrl=https://pushing-front.vercel.app",
-    "desarrollo": "npx cypress open --e2e -b electron --config baseUrl=https://pushing-it.vercel.app",
+    "test": "npx cypress open --e2e -b chrome",
+    "testing": "npx cypress open --e2e -b chrome --config baseUrl=https://pushing-front.vercel.app",
+    "desarrollo": "npx cypress open --e2e -b chrome --config baseUrl=https://pushing-it.vercel.app",
     "spec": "npx cypress run --spec 'cypress/e2e/pageObjectModel.cy.js'"
   },
   "keywords": [],

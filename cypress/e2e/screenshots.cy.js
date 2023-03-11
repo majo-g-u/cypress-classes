@@ -1,5 +1,4 @@
 /// <reference types="cypress" />
-/// <reference types="cypress" />
 
 import { LoginPage } from '../support/pages/LoginPage'
 import { ToDoListPage } from '../support/pages/ToDoListPage'
@@ -12,6 +11,8 @@ describe('Actividad complementaria 6', () => {
     const toDoListPage = new ToDoListPage();
     //generar una instancia de la clase loginPage
     const loginPage = new LoginPage();
+     //generar una instancia de la clase loginPage
+     const navBarPage = new NavBarPage();
 
     before('Before', () => {
         cy.fixture("fixtureDataObjectModel").then(data => {
@@ -25,11 +26,12 @@ describe('Actividad complementaria 6', () => {
         loginPage.typeInUser(loginData.test1.user);
         loginPage.typeInPassword(loginData.test1.pass);
         loginPage.clickBtnLogIn();
-        loginPage.returnUser(loginData.test1.user).should('include.text' , loginData.test1.user);
+        navBarPage.returnUser(loginData.test1.user).should('include.text' , loginData.test1.user);
         cy.get('#todolistlink').click();
     });
 
-    it("deberia verificar que los botones existen", () => {
-         
+    //me quede en el minuto 25 del video de la clase 7
+    it("Test should take a screenshot of full screen", () => {
+        navBarPage.returnUser(loginData.test1.user).should('include.text' , loginData.test1.user);
     });
 });
