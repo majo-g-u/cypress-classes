@@ -9,7 +9,7 @@ describe('Actividad complementaria 7', () => {
     let loginData
     //generar una instancia de la clase todoListPage
     const toDoListPage = new ToDoListPage();
-    //generar una instancia de la clase loginPage
+    //generar una instancia de la clase loginPage t
     const loginPage = new LoginPage();
      //generar una instancia de la clase loginPage
      const navBarPage = new NavBarPage();
