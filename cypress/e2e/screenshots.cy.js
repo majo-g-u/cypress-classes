@@ -29,6 +29,6 @@ describe('Actividad complementaria 7', () => {
         loginPage.typeInUser(loginData.test1.user);
         loginPage.typeInPassword(loginData.test1.pass);
         loginPage.clickBtnLogIn();
-        cy.get('#todolistlink').click();
+        cy.get('#todolistlink').screenshot('todolist');
     })
 });
